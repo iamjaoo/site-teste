@@ -1,0 +1,66 @@
+/* Estilo global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffdde1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8c1d1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23ff6f91'%3E%3Ccircle cx='10' cy='10' r='2'/%3E%3Ccircle cx='50' cy='50' r='2'/%3E%3Ccircle cx='80' cy='80' r='2'/%3E%3Ccircle cx='20' cy='70' r='2'/%3E%3Ccircle cx='90' cy='30' r='2'/%3E%3Ccircle cx='50' cy='10' r='2'/%3E%3C/svg%3E");
+    background-size: 40px 40px;
+}
+
+/* Estilo do contêiner */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Estilo da carta */
+.letter {
+    background: #fff9f1;
+    padding: 40px;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    border: 5px solid #d4a373;
+    background-image: radial-gradient(circle at top left, rgba(0, 0, 0, 0.15), transparent 40%),
+                      radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.15), transparent 40%);
+}
+
+/* Estilo das bordas queimadas */
+.letter:before, .letter:after {
+    content: "";
+    position: absolute;
+    background-color: #d4a373;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.letter:before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: -30px;
+    opacity: 0.5;
+}
+
+.letter:after {
+    width: 60px;
+    height: 60px;
+    bottom: -30px;
+    right: -30px;
+    opacity: 0.5;
+}
